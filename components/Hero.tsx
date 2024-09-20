@@ -27,7 +27,7 @@ const Hero = () => {
           />
           <div className='flex flex-col w-full justify-center items-center mt-2'>
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              Hi! I&apos;m Sebastián, a Next.js Developer based in <span className="bg-gradient-to-r from-yellow-400 via-blue-500 to-red-500 bg-clip-text text-transparent">
+              Hi! I&apos;m Sebastián, a Next.js/React Developer based in <span className="bg-gradient-to-r from-yellow-400 via-blue-500 to-red-500 bg-clip-text text-transparent">
                 Colombia
               </span>.
             </p>
