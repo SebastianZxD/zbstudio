@@ -211,3 +211,24 @@ export const socialMedia = [
     link: "https://www.linkedin.com/in/sebasti%C3%A1n-zambrano-725904204/"
   },
 ];
+
+export const cases = [
+  {
+    id: 1,
+    title: "ZH 360° Vision",
+    description: "ZH WebApp is a robust, multi-module application developed for ZH Ingenieros, a Colombia-based company responsible for maintaining oil facilities and pipelines across the country.",
+    imageUrl: "/zh.webp"
+  },
+  {
+    id: 2,
+    title: "under-construction",
+    description: "A healthcare app for patient registration and appointment management, built with Next.js for efficient use and fast performance.",
+    imageUrl: "/mediflow.jpg"
+  },
+  {
+    id: 3,
+    title: "under-construction",
+    description: "A web app that allows multiple users to edit text documents in real-time, ensuring seamless collaboration and live updates.",
+    imageUrl: "/editor.jpg"
+  },
+];
