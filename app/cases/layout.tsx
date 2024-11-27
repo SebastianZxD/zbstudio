@@ -7,22 +7,15 @@ export const metadata: Metadata = {
   description: "Detailed explanation on tackling past problems with profesionalism and a problem solving mindset.",
 };
 
-export default function RootLayout({
+export default function CasesLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
+      <body className="w-full">
           {children}
-        </ThemeProvider>
       </body>
     </html>
   );

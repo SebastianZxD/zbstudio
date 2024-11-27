@@ -77,7 +77,7 @@ export const CaseCard = ({ id, title, description, imageUrl }: CaseCardProps) =>
     <BackgroundGradient className="border-black border-2 hover:border-slate-600">
       <Link href={`/cases/${id}`}>
         <CardContainer className="w-auto max-w-[300px]">
-          <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black w-auto sm:w-[30rem] h-auto hover:rounded-xl rounded-none p-6 border-none">
+          <CardBody className="relative group/card dark:hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black w-auto sm:w-[30rem] h-auto hover:rounded-xl rounded-none p-6 border-none">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"

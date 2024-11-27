@@ -13,22 +13,13 @@ export default function CaseLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="antialiased">
-      <body className="font-sans antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="relative flex min-h-screen flex-col bg-black-100">
-            <main className="flex-1">
-              <div className="container relative mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 text-white">
+    <html lang="en">
+      <body className="font-sans antialiased bg-black-100">
+          <div className="relative flex min-h-screen flex-col">
+            <div className="container relative mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 text-white">
                 {children}
-              </div>
-            </main>
+            </div>
           </div>
-        </ThemeProvider>
       </body>
     </html>
   );
