@@ -20,7 +20,9 @@ export default function Page({ params }: { params: { id: string } }) {
 
   return (
     <main className='flex-1'>
-      <CaseComponent />
+      <div className='bg-black-100 backdrop-blur-md relative hover:shadow-2xl hover:shadow-emerald-500/[0.1] border-white/[0.2] md:rounded-xl p-6 border max-md:w-full'>
+        <CaseComponent />
+      </div>
     </main>
   );
 }

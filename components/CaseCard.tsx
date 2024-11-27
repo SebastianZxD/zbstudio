@@ -13,23 +13,22 @@ interface CaseCardProps {
 }
 
 export const CaseCard = ({ id, title, description, imageUrl }: CaseCardProps) => {
-
   const isUnderConstruction = title.toLowerCase() === "under-construction";
 
   if (isUnderConstruction) {
     return (
       <CardContainer className="w-auto max-w-[300px]">
-        <CardBody className="bg-gray-50/10 backdrop-blur-md relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black/30 dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+        <CardBody className=" backdrop-blur-md relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black/30 border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 dark:text-white/80"
+            className="text-xl font-bold text-white/80"
           >
             Coming Soon
           </CardItem>
           <CardItem
             as="p"
             translateZ="60"
-            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-400"
+            className="text-neutral-400 text-sm max-w-sm mt-2"
           >
             This case study is currently under construction. Stay tuned for updates!
           </CardItem>
@@ -63,7 +62,7 @@ export const CaseCard = ({ id, title, description, imageUrl }: CaseCardProps) =>
               translateZ={20}
               translateX={-40}
               as="div"
-              className="px-4 py-2 rounded-xl text-xs font-normal dark:text-neutral-400"
+              className="px-4 py-2 rounded-xl text-xs font-normal text-neutral-400"
             >
               Coming Soon →
             </CardItem>
@@ -77,17 +76,17 @@ export const CaseCard = ({ id, title, description, imageUrl }: CaseCardProps) =>
     <BackgroundGradient className="border-black border-2 hover:border-slate-600">
       <Link href={`/cases/${id}`}>
         <CardContainer className="w-auto max-w-[300px]">
-          <CardBody className="relative group/card dark:hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black w-auto sm:w-[30rem] h-auto hover:rounded-xl rounded-none p-6 border-none">
+          <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black w-auto sm:w-[30rem] h-auto hover:rounded-xl rounded-none p-6 border-none">
             <CardItem
               translateZ="50"
-              className="text-xl font-bold text-neutral-600 dark:text-white"
+              className="text-xl font-bold text-white"
             >
               {title}
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+              className="text-neutral-300 text-sm max-w-sm mt-2"
             >
               {description}
             </CardItem>
@@ -110,7 +109,7 @@ export const CaseCard = ({ id, title, description, imageUrl }: CaseCardProps) =>
                 translateZ={20}
                 translateX={-40}
                 as="button"
-                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                className="px-4 py-2 rounded-xl text-xs font-normal text-white"
               >
                 <div className="flex flex-row"> 
                   <span>

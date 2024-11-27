@@ -14,9 +14,9 @@ export default function CaseLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased bg-black-100">
+      <body className="font-sans antialiased">
           <div className="relative flex min-h-screen flex-col">
-            <div className="container relative mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 text-white">
+            <div className="container relative mx-auto max-w-3xl md:px-4 py-10 px-1 lg:px-8 text-white">
                 {children}
             </div>
           </div>
